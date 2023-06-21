@@ -1,6 +1,5 @@
-import '1-main.dart';
-import 'dart:convert';
+import '0-main.dart';
 
-Future<String> getUserId() {
-	return fetchUserData().then((value) => jsonDecode(value)['id']);
+Future<void> usersCount() {
+  return fetchUsersCount().then((value) => print('$value'));
 }
